@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<EditTextPreference
+    android:key="api_location"
+    android:title="Set AddressBook WebAPI Location"
+    android:summary="enter AddressBook web api location here"
+    android:dialogTitle="Enter your Web Api location here like http://web api ip address:port number/api/Contact/"/>
+
+</PreferenceScreen>

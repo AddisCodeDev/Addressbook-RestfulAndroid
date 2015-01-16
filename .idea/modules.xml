@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AddressBooKRESTConsume.iml" filepath="$PROJECT_DIR$/AddressBooKRESTConsume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AddressBook-Android-App.iml" filepath="$PROJECT_DIR$/AddressBook-Android-App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Addressbook-RestfulAndroid-.iml" filepath="$PROJECT_DIR$/Addressbook-RestfulAndroid-.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/dark_blue">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/profilePictureNewContact"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_user"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/firstNameTextViewNewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profilePictureNewContact"
+        android:layout_below="@+id/profilePictureNewContact"
+        android:layout_marginTop="10dp"
+        android:text="First Name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/firstNameEditTextNewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameTextViewNewContact"
+        android:layout_alignLeft="@+id/firstNameTextViewNewContact"
+        android:layout_marginTop="5dp"
+        android:hint="First Name"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lastNameTextViewNewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstNameEditTextNewContact"
+        android:layout_below="@+id/firstNameEditTextNewContact"
+        android:layout_marginTop="5dp"
+        android:text="Last Name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/lastNameEditTextNewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastNameTextViewNewContact"
+        android:layout_alignLeft="@+id/lastNameTextViewNewContact"
+        android:layout_marginTop="5dp"
+        android:hint="Last Name"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/emailTextViewNewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastNameEditTextNewContact"
+        android:layout_below="@+id/lastNameEditTextNewContact"
+        android:layout_marginTop="5dp"
+        android:text="Email"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/emailEditTextNewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailTextViewNewContact"
+        android:layout_alignLeft="@+id/emailTextViewNewContact"
+        android:layout_marginTop="5dp"
+        android:hint="Email Address"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/departmentTextViewNewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailEditTextNewContact"
+        android:layout_below="@+id/emailEditTextNewContact"
+        android:layout_marginTop="5dp"
+        android:text="Department"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/departmentEditTextNewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/departmentTextViewNewContact"
+        android:layout_alignLeft="@+id/departmentTextViewNewContact"
+        android:layout_marginTop="5dp"
+        android:hint="Department"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/yearTextViewNewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/departmentEditTextNewContact"
+        android:layout_below="@+id/departmentEditTextNewContact"
+        android:layout_marginTop="5dp"
+        android:text="Year"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/yearEditTextNewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yearTextViewNewContact"
+        android:layout_alignLeft="@+id/yearTextViewNewContact"
+        android:layout_marginTop="5dp"
+        android:hint="Year"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:inputType="text" />
+    </RelativeLayout>
+
+</RelativeLayout>
