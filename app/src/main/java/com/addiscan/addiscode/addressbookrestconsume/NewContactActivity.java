@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.addiscan.addiscode.addressbookrestconsume.apihandler.AddressbookAPIHandler;
 import com.addiscan.addiscode.addressbookrestconsume.clientdata.ClientData;
+import com.addiscan.addiscode.addressbookrestconsume.dbmodels.ContactTable;
 import com.addiscan.addiscode.addressbookrestconsume.models.Contact;
 import com.addiscan.addiscode.addressbookrestconsume.models.ContactData;
 
@@ -52,16 +53,27 @@ public class NewContactActivity extends Activity {
                 return true;
 
             case R.id.menu_save:
-
+                String fName = firstName.getText().toString();
+                String lName = lastName.getText().toString();
+                String eMail = email.getText().toString();
+                String dEpartment =department.getText().toString();
+                String yEar = year.getText().toString();
                 contact = new Contact(
                           "",
-                          firstName.getText().toString(),
-                          lastName.getText().toString(),
-                          email.getText().toString(),
-                          department.getText().toString(),
-                          year.getText().toString()
+                          fName,
+                          lName,
+                          eMail,
+                          dEpartment,
+                          yEar
                 );
                 ClientData.SaveContact(contact);
+                ContactTable contactTable = new ContactTable();
+                contactTable.FirstName = fName;
+                contactTable.LastName = lName;
+                contactTable.Email = eMail;
+                contactTable.Department = dEpartment;
+                contactTable.Year = yEar;
+                contactTable.save();
                 startActivity(new Intent(this, MainActivity.class));
 
 

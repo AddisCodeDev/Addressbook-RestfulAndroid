@@ -10,7 +10,7 @@
         android:id="@+id/profilePictureListcontact"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/ic_user"
+        android:src="@drawable/profile_picture_main"
         android:scaleType="fitXY"/>
 
     <TextView
